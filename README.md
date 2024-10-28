@@ -2,6 +2,8 @@
 
 This repository contains code and data for performing sentiment analysis on tweets directed at major U.S. airlines. Using the ULMFiT (Universal Language Model Fine-tuning) approach, the model is fine-tuned on this dataset to classify tweets as **positive**, **neutral**, or **negative**.
 
+---
+
 ## Repository Contents
 
 1. **Code**: The Python code provided in `ulfit_newdata_parinya.py` is used for:
@@ -11,6 +13,9 @@ This repository contains code and data for performing sentiment analysis on twee
    - Generating and plotting a confusion matrix to evaluate the model's performance
 
 2. **Dataset**: The `Tweets.csv` file contains the Twitter US Airline Sentiment dataset, with each tweet labeled with sentiment (positive, neutral, or negative) and other metadata.
+   - **Source**: [Twitter US Airline Sentiment Dataset on Kaggle](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment/data)
+
+---
 
 ## Dataset Description
 
@@ -34,6 +39,8 @@ You can install these using:
 pip install fastai pandas spacy seaborn matplotlib scikit-learn
 ```
 
+---
+
 ## Instructions
 1. **Data Preprocessing**: The code preprocesses the text in the dataset by:
 - Converting text to lowercase
@@ -51,7 +58,7 @@ The model's performance is evaluated on a validation set, and a confusion matrix
 Usage
 To run the code:
 
-Ensure Tweets.csv is in the same directory as the script.
+Ensure `Tweets.csv` is in the same directory as the script.
 Run the following command in the terminal:
 bash
 ```bash
